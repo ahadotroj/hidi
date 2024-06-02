@@ -245,8 +245,8 @@ endipresult() {
 		"tag": "select",
 		"outbounds": [
 			"auto",
-			"IP->Iran, Ahad203",
-			"IP->Main, Ahad203"
+			"IP->Iran, Yotube:Geekmeek",
+			"IP->Main, Yotube:Geekmeek"
 		],
 		"default": "auto"
 		},
@@ -254,15 +254,15 @@ endipresult() {
 		"type": "urltest",
 		"tag": "auto",
 		"outbounds": [
-			"IP->Iran, Ahad203",
-			"IP->Main, Ahad203"
+			"IP->Iran, Yotube:Geekmeek",
+			"IP->Main, Yotube:Geekmeek"
 		],
 		"url": "http://cp.cloudflare.com/",
 		"interval": "10m0s"
 		},
 		{
 		"type": "wireguard",
-		"tag": "IP->Iran, Ahad203",
+		"tag": "IP->Iran, Yotube:Geekmeek",
 		"local_address": [
 			"172.16.0.2/32",
 			"'$publicKey'"
@@ -277,8 +277,8 @@ endipresult() {
 		},
 		{
 		"type": "wireguard",
-		"tag": "IP->Main, Ahad203",
-		"detour": "IP->Iran, Ahad203",
+		"tag": "IP->Main, Yotube:Geekmeek",
+		"detour": "IP->Iran, Yotube:Geekmeek",
 		"local_address": [
 			"172.16.0.2/32",
 			"'$publicKey2'"
